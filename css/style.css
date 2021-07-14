@@ -1,0 +1,117 @@
+@import url(global_styles.css);
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 70px 15px;
+    position: relative;
+}
+
+.image-desktop-top, .image-desktop-bottom {
+    display: none;
+}
+
+.image-mobile-top, .image-mobile-bottom {
+    width: 100%;
+}
+
+.image-mobile-top {
+    position: absolute;
+    top: 0;
+}
+
+.image-mobile-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.content-iformation {
+    text-align: center;
+}
+
+.information-title {
+    color: var(--very-dark);
+    padding: 0 20px;
+}
+
+.information-parrafe {
+    color: var(--dark-rayish);
+    line-height: 25px;
+    padding-top: 20px;
+}
+
+.rankings {
+    width: 100%;
+    padding-top: 30px;
+}
+
+.ranking {
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    background: var(--light-Grayish);
+    margin: auto;
+    margin-top: 10px;
+}
+
+.ranking-stars img {
+    margin-right: 5px;
+}
+
+.ranking-text {
+    color: var(--very-dark);
+    font-weight: 700;
+    padding-top: 10px;
+}
+
+.cards {
+    width: 100%;
+    padding-top: 50px
+}
+
+.card {
+    width: 100%;
+    padding: 30px;
+    background: var(--very-dark);
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+}
+
+.card-header-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.card-header-text-name {
+    color: #fff;
+    font-weight: 500;
+}
+
+.card-header-text-verification {
+    color: var(--soft-pink);
+    margin-top: 5px;
+}
+
+.card-body {
+    margin-top: 20px;
+}
+
+.card-body-text {
+    color: #fff;
+    line-height: 25px;
+}
+
