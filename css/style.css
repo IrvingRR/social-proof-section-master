@@ -17,15 +17,18 @@
 
 .image-mobile-top, .image-mobile-bottom {
     width: 100%;
+    position: absolute;
+    z-index: -100;
 }
 
 .image-mobile-top {
-    position: absolute;
+    justify-self: flex-start;
     top: 0;
+    left: 0;
 }
 
 .image-mobile-bottom {
-    position: absolute;
+    justify-self: flex-end;
     bottom: 0;
     left: 0;
 }
@@ -56,7 +59,7 @@
     border-radius: 10px;
     background: var(--light-Grayish);
     margin: auto;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 .ranking-stars img {
@@ -115,3 +118,114 @@
     line-height: 25px;
 }
 
+/* Responsive Design */
+@media screen and (min-width: 768px) {
+    
+    .container {
+        padding: 100px;
+    }
+    
+}
+
+@media screen and (min-width: 1024px) {
+    
+    .container {
+        padding: 60px;
+    }
+
+    .image-mobile-top, .image-mobile-bottom {
+        display: none;
+    }
+    
+    .image-desktop-top, .image-desktop-bottom {
+        display: block;
+        position: absolute;
+        z-index: -100;
+    }
+    
+    .image-desktop-top {
+        width: 50%;
+        top: -50px;
+        left: 0;
+        justify-self: flex-start;
+    }
+    
+    .image-desktop-bottom {
+        width: 100%;
+        bottom: -50px;
+        right: -250px;
+        justify-self: flex-end;
+    }
+    
+    .content-iformation {
+        display: flex;
+        align-items: center;
+        text-align: left;
+    }
+
+    .content-iformation .information {
+        padding: 50px;
+    }
+
+    .information-title {
+        padding: 0;
+        font-size: 50px;
+    }
+
+    .information-parrafe {
+        color: var(--very-dark);
+    }
+
+    .rankings {
+        padding-top: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .ranking {
+        width: 80%;
+        display: flex;
+        position: relative;
+    }
+
+    .ranking-text {
+        padding: 0;
+        margin-left: 20px;
+    }
+
+    .ranking:nth-child(1) {
+        left: -50px;
+    }
+
+    .ranking:nth-child(3) {
+        right: -50px;
+    }
+
+    .cards {
+        width: 100%;
+        padding-top: 50px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .card-body {
+        padding-top: 20px;
+    }
+    
+    .card {
+        width: 380px;
+        padding: 40px;
+        margin-top: 0;
+        position: relative;
+    }
+
+    .card:nth-child(1) {
+        top: -20px;
+    }
+
+    .card:nth-child(3) {
+        bottom: -20px;
+    }
+
+}
